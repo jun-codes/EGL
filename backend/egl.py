@@ -22,7 +22,8 @@ updated = False
 for row in rows:
     if len(row) < 10:
         continue
-
+    #add check for tuesday vs friday for borrowing. in row[4] - row[6] is tuesday and row[7] - row[9] is friday
+    
     if row[1] == game:
         if row[3] != "Available":
             print("game is not available")
